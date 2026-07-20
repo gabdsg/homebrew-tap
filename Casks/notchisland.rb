@@ -14,9 +14,10 @@ cask "notchisland" do
   zap trash: "~/.claude/notch-hook.sh"
 
   caveats <<~EOS
-    NotchIsland is not code-signed with a Developer ID. Install with:
-      brew install --cask --no-quarantine gabdsg/tap/notchisland
-    or approve it under System Settings > Privacy & Security after first launch.
+    NotchIsland is not code-signed with a Developer ID. If macOS blocks the
+    first launch, either approve it under System Settings > Privacy & Security
+    or clear the quarantine flag:
+      xattr -dr com.apple.quarantine /Applications/NotchIsland.app
 
     On first launch the app installs its Claude Code hooks into
     ~/.claude/settings.json (idempotent; other hooks are preserved) and
