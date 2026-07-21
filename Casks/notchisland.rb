@@ -1,13 +1,16 @@
 cask "notchisland" do
-  version "1.1.0"
-  sha256 "2c5b66bd6963498d62482cbb83d66277326689171ddffeb99d37ca9f5dc17708"
+  version "1.2.0"
+  sha256 "b62c29d0aaf1710d5061ba20a5bf3109662459c014ad56b4fd25f74067e28d34"
 
-  url "https://github.com/gabdsg/NotchIsland/releases/download/v#{version}/NotchIsland.zip"
+  url "https://github.com/gabdsg/homebrew-tap/releases/download/v#{version}/NotchIsland.zip"
   name "NotchIsland"
   desc "Dynamic Island for Claude Code sessions on notch Macs"
   homepage "https://github.com/gabdsg/NotchIsland"
 
   depends_on :macos
+
+  # the app updates itself via Sparkle; brew upgrade also works
+  auto_updates true
 
   app "NotchIsland.app"
 
