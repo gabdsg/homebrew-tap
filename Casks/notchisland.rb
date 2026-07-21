@@ -5,12 +5,11 @@ cask "notchisland" do
   url "https://github.com/gabdsg/homebrew-tap/releases/download/v#{version}/NotchIsland.zip"
   name "NotchIsland"
   desc "Dynamic Island for Claude Code sessions on notch Macs"
-  homepage "https://github.com/gabdsg/NotchIsland"
-
-  depends_on :macos
+  homepage "https://github.com/gabdsg/homebrew-tap"
 
   # the app updates itself via Sparkle; brew upgrade also works
   auto_updates true
+  depends_on :macos
 
   app "NotchIsland.app"
 
