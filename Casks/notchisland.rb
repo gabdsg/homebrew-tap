@@ -1,6 +1,6 @@
 cask "notchisland" do
-  version "1.2.0"
-  sha256 "b62c29d0aaf1710d5061ba20a5bf3109662459c014ad56b4fd25f74067e28d34"
+  version "1.2.1"
+  sha256 "46223b46a16e599e59f4600a65808d484722eacd973325881a7d1c810a34a16a"
 
   url "https://github.com/gabdsg/homebrew-tap/releases/download/v#{version}/NotchIsland.zip"
   name "NotchIsland"
