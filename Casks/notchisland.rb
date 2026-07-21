@@ -1,9 +1,11 @@
 cask "notchisland" do
-  # always tracks the latest release; the app self-verifies updates via Sparkle
-  version :latest
-  sha256 :no_check
+  # pinned per release: unique URL per version so brew caches/invalidates
+  # correctly (a `latest` URL served stale cached zips). Sparkle handles in-app
+  # updates; bump these two lines each release (build-app.sh prints the sha256).
+  version "1.2.6"
+  sha256 "e3f2f30cb8162f2eff8d3182c7d3ab41618f39aff3c9cda32573e715050de238"
 
-  url "https://github.com/gabdsg/homebrew-tap/releases/latest/download/NotchIsland.zip"
+  url "https://github.com/gabdsg/homebrew-tap/releases/download/v#{version}/NotchIsland.zip"
   name "NotchIsland"
   desc "Dynamic Island for Claude Code sessions on notch Macs"
   homepage "https://github.com/gabdsg/homebrew-tap"
