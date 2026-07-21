@@ -1,6 +1,7 @@
 cask "notchisland" do
+  # always tracks the latest release; the app self-verifies updates via Sparkle
   version :latest
-  sha256 :no_check  # always tracks the latest release; the app self-verifies updates via Sparkle
+  sha256 :no_check
 
   url "https://github.com/gabdsg/homebrew-tap/releases/latest/download/NotchIsland.zip"
   name "NotchIsland"
