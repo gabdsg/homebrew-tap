@@ -2,8 +2,8 @@ cask "notchisland" do
   # pinned per release: unique URL per version so brew caches/invalidates
   # correctly (a `latest` URL served stale cached zips). Sparkle handles in-app
   # updates; bump these two lines each release (build-app.sh prints the sha256).
-  version "1.3.0"
-  sha256 "bc4c2d424a001d1314823da8322da1093788c87b620a185cd1e8864eaf1dc449"
+  version "1.4.0"
+  sha256 "4c1a5670eabb57428c8652e1575438eece997e39b8d7fb989105a99fd20129bc"
 
   url "https://github.com/gabdsg/homebrew-tap/releases/download/v#{version}/NotchIsland.zip"
   name "NotchIsland"
